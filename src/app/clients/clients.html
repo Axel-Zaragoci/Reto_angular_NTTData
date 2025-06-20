@@ -2,9 +2,9 @@
     <h2>Datos</h2>
     <ul>
         @for (client of data; track $index) {
-        <li>{{ client.id }}, {{ client.name }}, {{ client.contactEmail }}, {{ client.revenue }}, {{ client.startDate }}</li>
+            <li><span>{{ client.id }}</span>, <span>{{ client.name }}</span>, <span>{{ client.contactEmail }}</span>, <span>{{ client.revenue }}</span>, <span>{{ client.startDate }}</span>/li>
         } @empty {
-        <p>No hay nada</p>
+            <p>No hay nada</p>
         }
     </ul>
 </section>

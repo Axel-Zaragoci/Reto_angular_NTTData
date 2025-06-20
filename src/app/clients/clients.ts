@@ -7,6 +7,7 @@ import { HttpClient, HttpHandler, HttpXhrBackend, HttpHeaders } from '@angular/c
   standalone: true,
   imports: [CommonModule],
   templateUrl: './clients.html',
+  styleUrls: ['./clients.css'],
   providers: [
     // Configuración COMPLETA y AUTÓNOMA de HttpClient
     {

@@ -1,0 +1,12 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #11111b;
+}
+
+li {
+    list-style-type: disc;
+}
+
+span {
+    margin: 0 5px;
+}
