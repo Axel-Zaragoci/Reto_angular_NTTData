@@ -7,13 +7,14 @@ import { HttpClient, HttpHandler, HttpXhrBackend, HttpHeaders } from '@angular/c
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div *ngIf="loading">Cargando clientes...</div>
-    <div *ngIf="error" style="color: red">{{ error }}</div>
-    
-    <div *ngIf="data">
-      <h3>Clientes reales:</h3>
-      <pre>{{ data | json }}</pre>
-    </div>
+    <h2>Datos</h2>
+    <ul>
+      @for (client of data; track $index) {
+        <li>{{ client.name }}</li>
+      } @empty {
+        <p>No hay nada</p>
+      }
+    </ul>
   `,
   providers: [
     // Configuración COMPLETA y AUTÓNOMA de HttpClient
