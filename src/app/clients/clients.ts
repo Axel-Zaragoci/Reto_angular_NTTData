@@ -6,16 +6,7 @@ import { HttpClient, HttpHandler, HttpXhrBackend, HttpHeaders } from '@angular/c
   selector: 'app-clients',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <h2>Datos</h2>
-    <ul>
-      @for (client of data; track $index) {
-        <li>{{ client.name }}</li>
-      } @empty {
-        <p>No hay nada</p>
-      }
-    </ul>
-  `,
+  templateUrl: './clients.html',
   providers: [
     // Configuración COMPLETA y AUTÓNOMA de HttpClient
     {
